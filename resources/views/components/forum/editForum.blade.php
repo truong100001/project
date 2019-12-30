@@ -43,7 +43,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button id="addAccount" type="submit" class="btn btn-primary">Lưu</button>
-                                    <a href="{{asset('/forum')}}">
+                                    <a href="{{asset('/forum-account')}}">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                     </a>
                                 </div>

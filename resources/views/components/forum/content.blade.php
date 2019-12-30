@@ -126,7 +126,6 @@
                                         <th>Tên forum</th>
                                         <th>Username</th>
                                         <th>Password</th>
-                                        <th>Trạng thái</th>
                                         <th></th>
                                     </tr>
                                     </thead>
@@ -139,18 +138,18 @@
                                         </td>
                                         <td>{{$account->username}}</td>
                                         <td>{{$account->password}}</td>
-                                        <td>
-                                            <label class="switch switch-3d switch-success mr-3">
+                                        {{--<td>--}}
+                                            {{--<label class="switch switch-3d switch-success mr-3">--}}
 
-                                                <input onclick="updateStatusAccount({{$account->id}})" type="checkbox" class="switch-input"
-                                                       @if($account->status == 1)
-                                                       checked
-                                                        @endif
-                                                >
-                                                <span class="switch-label"></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
+                                                {{--<input onclick="updateStatusAccount({{$account->id}})" type="checkbox" class="switch-input"--}}
+                                                       {{--@if($account->status == 1)--}}
+                                                       {{--checked--}}
+                                                        {{--@endif--}}
+                                                {{-->--}}
+                                                {{--<span class="switch-label"></span>--}}
+                                                {{--<span class="switch-handle"></span>--}}
+                                            {{--</label>--}}
+                                        {{--</td>--}}
                                         <td>
                                             <div class="table-data-feature">
                                                 <a href="{{asset('/editAccount')}}/{{$account->id}}">
