@@ -116,18 +116,6 @@
                                     <div class="col-md-3">
                                         <span class="text-primary">Tổng số account</span> <span class="badge badge-primary"> {{$total_account}}</span>
                                     </div>
-                                    <div class="col-md-9">
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <input type="text" class="form-control" placeholder="Nhập username">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <button class="au-btn au-btn-icon au-btn--green au-btn--small">
-                                                    <i class="zmdi zmdi-search"></i>Tìm kiếm
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <table class="table table-data2">
                                     <thead>
