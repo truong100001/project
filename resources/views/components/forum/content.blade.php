@@ -15,6 +15,17 @@
             });
         </script>
     @endif
+
+    @if(session('error'))
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Lỗi',
+                text:"Username đã tồn tại trong forum rồi",
+                timer:3000
+            });
+        </script>
+    @endif
     <!-- MAIN CONTENT-->
     <div class="main-content">
         <div class="section__content section__content--p30">

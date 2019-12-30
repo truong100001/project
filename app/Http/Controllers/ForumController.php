@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
 use function Lmc\Steward\requireIfExists;
+use function React\Promise\reject;
 
 class ForumController extends Controller
 {
@@ -96,6 +97,10 @@ class ForumController extends Controller
             'username.required' => 'Tên tài khoản không được để trống',
             'password.required' => 'Mật khẩu không được để trống',
         ]);
+
+        $check_account = DB::table('account')->where('id_forum',$request->id_forum)->where('username',$request->username)->first();
+        if($check_account)
+            return redirect()->back()->with('error','failed');
 
         DB::table('account')->insert([
             'id_forum' => $request->id_forum,
