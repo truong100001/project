@@ -21,8 +21,8 @@
             Swal.fire({
                 icon: 'error',
                 title: 'Lỗi',
-                text:"Username đã tồn tại trong forum rồi",
-                timer:3000
+                text:"Tài khoảng này đã tồn tại trong forum rồi",
+                timer:5000
             });
         </script>
     @endif
@@ -91,6 +91,7 @@
                                     </tbody>
                                     @endforeach
                             </table>
+                            {{$forums->links()}}
                         </div>
                         <!-- END DATA TABLE -->
                     </div>
